@@ -1,0 +1,23 @@
+\definecolor{gold}{rgb}{0.77,0.69,0.37}
+\newlength{\hptitlewidth}
+\newlength{\rationalh}
+\newcommand{\hptitle}[2][\stockwidth]{%
+  \setlength{\hptitlewidth}{#1}%
+  \centering\color{white}%
+  \vskip 3cm\resizebox{.95\hptitlewidth}{!}{\textls[100]{·𐑣𐑨𐑮𐑦 ·𐑐𐑪𐑑𐑼 𐑯 𐑞}}%
+  \vskip 2mm%
+  \color{gold}%
+  \settoheight{\rationalh}{\resizebox{.95\hptitlewidth}{!}{\textls[20]{𐑮𐑨𐑖𐑩𐑯𐑨𐑤𐑦𐑑𐑦}}}
+  \resizebox{!}{\rationalh}{\textls[50]{𐑥𐑧𐑔𐑩𐑛𐑟}}%
+  \hfil\resizebox{!}{\rationalh}{\textls[50]{𐑝}}%
+  \vskip 2mm%
+  \resizebox{.95\hptitlewidth}{!}{\textls[20]{𐑮𐑨𐑖𐑩𐑯𐑨𐑤𐑦𐑑𐑦}}%
+  \vskip 8mm%
+  \color{white}%
+  \resizebox{.5\hptitlewidth}{!}{\textls[50]{\scshape{}𐑚𐑲 ·𐑧𐑤𐑦𐑱𐑟𐑼 ·𐑿𐑛𐑒𐑪𐑓𐑕𐑒𐑦}}%
+  \vfill%
+  \textls[50]{\scshape #2}%
+  \color{black}%
+  \vskip 1cm\ %
+}
+\providecommand{\fullvolumetitle}[1]{Book #1: \volumetitle}

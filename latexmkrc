@@ -5,11 +5,15 @@ use File::Spec::Functions;
 
 @default_files = (
   'hpmor',
+  'hpmor-shavian',
   'hpmor-1', 'hpmor-2', 'hpmor-3', 'hpmor-4', 'hpmor-5', 'hpmor-6',
   'layout/hpmor-dust-jacket-1', 'layout/hpmor-dust-jacket-2',
   'layout/hpmor-dust-jacket-3', 'layout/hpmor-dust-jacket-4',
   'layout/hpmor-dust-jacket-5', 'layout/hpmor-dust-jacket-6',
- );
+  'layout/shavian/hpmor-dust-jacket-1', 'layout/shavian/hpmor-dust-jacket-2',
+  'layout/shavian/hpmor-dust-jacket-3', 'layout/shavian/hpmor-dust-jacket-4',
+  'layout/shavian/hpmor-dust-jacket-5', 'layout/shavian/hpmor-dust-jacket-6',
+);
 
 # Install git hooks for gitinfo2 if not already installed
 my $hooks_dir = catdir('.git', 'hooks');
